@@ -16,6 +16,8 @@ public class BuscarUsuario extends javax.swing.JFrame {
      */
     public BuscarUsuario() {
         initComponents();
+        java.awt.Dimension d = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+        this.setBounds(150,150,d.width,d.height);
     }
 
     /**
@@ -39,8 +41,8 @@ public class BuscarUsuario extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel1.setText("CPF:");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 140, 80, 40));
+        jLabel1.setText("Digite o CPF :");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 110, 40));
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 230, -1));
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -49,6 +51,11 @@ public class BuscarUsuario extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jButton2.setText("Buscar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, 110, 50));
 
         jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -68,6 +75,10 @@ public class BuscarUsuario extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
